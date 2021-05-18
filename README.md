@@ -12,5 +12,7 @@ player colors
 
 restart game
 
+the winning peaces get a darker color
+
 
 ## create your own branch and work in there
