@@ -1,0 +1,219 @@
+<!--
+4 gewinnt
+
+option to change to 1,2,3,5,6, ....
+fieldsize options
+player colors
+restart game
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *, :before, :after{
+            box-sizing: border-box;
+        }
+
+        .board{
+            width: fit-content;
+            margin: auto;
+            position: relative;
+        }
+
+        .board__row{
+            display: flex;
+        }
+
+        .cell{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+        .cell-content{
+            border: 28px solid #0a3b99;
+            border-radius: 110px;
+            transform: scale(1.43);
+            height: 100%;
+        }
+
+        .stone{
+            width: 140px;
+            height: 140px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translate(5px, -5px);
+        }
+        .stone.stone__player-one{
+            background-color: #e00000;
+        }
+        .stone.stone__player-one.winner{
+            background-color: #880000;
+        }
+        .stone.stone__player-two{
+            left:150px;
+            background-color: #e5e50b;
+        }
+        .stone.stone__player-two.winner{
+            left:150px;
+            background-color: #8a8a00;
+        }
+    </style>
+</head>
+<body>
+<div class="board">
+    <div class="stone stone__player-one"></div>
+    <div class="stone stone__player-one winner" style="left: 300px"></div>
+    <div class="stone stone__player-two"></div>
+    <div class="stone stone__player-two" style="bottom: 150px"></div>
+    <div class="stone stone__player-two" style="bottom: 300px"></div>
+    <div class="stone stone__player-two winner" style="bottom: 450px"></div>
+
+
+    <div class="board__row">
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+    </div>
+    <div class="board__row">
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+    </div>
+    <div class="board__row">
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+    </div>
+    <div class="board__row">
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+    </div>
+    <div class="board__row">
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+    </div>
+    <div class="board__row">
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+        <div class="cell">
+            <div class="cell-content"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
